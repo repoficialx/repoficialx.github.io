@@ -3,10 +3,103 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>repoficialx</title>
+  <title>repoficialx – Inicio</title>
+  <style>
+    :root {
+      --accent: #0067c0;
+      --bg: #f3f3f3;
+      --text: #1b1b1b;
+      --card: #ffffff;
+      --shadow: rgba(0, 0, 0, 0.1);
+      --border-radius: 16px;
+    }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    header {
+      width: 100%;
+      background-color: var(--accent);
+      color: white;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 10px var(--shadow);
+      text-align: center;
+    }
+    main {
+      max-width: 800px;
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    .card {
+      background-color: var(--card);
+      padding: 1.5rem;
+      border-radius: var(--border-radius);
+      box-shadow: 0 4px 10px var(--shadow);
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: scale(1.02);
+    }
+    .card h2 {
+      margin-top: 0;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-  <h1>¡Hola! Soy Ray, el creador de iNS DevKit y más.</h1>
-  <p>Este es mi espacio donde hablo de tecnología, publico proyectos y comparto lo que aprendo.</p>
+  <header>
+    <h1>repoficialx</h1>
+    <p>Apps modernas y proyectos tech hechos con pasión</p>
+  </header>
+  <main>
+    <div class="card">
+      <h2>Recip</h2>
+      <p>Gestor de recetas con soporte para archivos .rec personalizados.</p>
+      <a href="https://github.com/repoficialx/recip">Ver en GitHub →</a>
+    </div>
+    <div class="card">
+      <h2>Pwaexe</h2>
+      <p>Convierte apps web en ejecutables con WebView2.</p>
+      <a href="https://github.com/repoficialx/pwaexe">Ver en GitHub →</a>
+    </div>
+    <div class="card">
+      <h2>Winactiva</h2>
+      <p>Activa Windows legalmente usando claves públicas de Microsoft.</p>
+      <a href="https://github.com/repoficialx/winactiva">Ver en GitHub →</a>
+    </div>
+    <div class="card">
+      <h2>CopilotRunner</h2>
+      <p>Accede a Microsoft Copilot desde países donde aún no está disponible.</p>
+      <a href="https://github.com/repoficialx/CopilotRunner">Ver en GitHub →</a>
+    </div>
+    <div class="card">
+      <h2>iNS DevKit</h2>
+      <p>Librerías y herramientas base para desarrollar en C# con estilo.</p>
+      <a href="https://github.com/repoficialx/ins-devkit">Ver en GitHub →</a>
+    </div>
+    <div class="card">
+      <h2>deneOS</h2>
+      <p>Un mini sistema operativo alternativo y curioso en constante desarrollo.</p>
+      <a href="https://github.com/repoficialx/deneOS">Ver en GitHub →</a>
+    </div>
+    <div class="card">
+      <h2>RaxOS v2</h2>
+      <p>Un sistema operativo basado en Cosmos OS para exploraciones técnicas.</p>
+      <a href="https://github.com/repoficialx/RaxOS_v2">Ver en GitHub →</a>
+    </div>
+  </main>
 </body>
 </html>
